@@ -7,7 +7,7 @@ color: white;
 
 }
 body{
-    background: linear-gradient(to left top, #09e2ec,#00ff9e);
+    background: linear-gradient(to left top, #09e2ed,#00ff9e);
 }
 html,body{
   height: 100%;
@@ -20,7 +20,7 @@ html,body{
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
 
 }
 #visor{
@@ -33,4 +33,26 @@ html,body{
     border: 5px solid white;
     border-radius: 4px;
     outline: none;
+}
+.botoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.botoes button{
+    flex-basis: 20%;
+    height: 50px;
+    background: none;
+    outline: none;
+    border: 5px solid white;
+    margin: 5px;
+    cursor: pointer;
+
+}
+.botoes button:last-child{
+    flex-basis: 45%;
+
+}
+.botoes button:hover{
+    transform: scale(1.08);
 }
